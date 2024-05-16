@@ -4,24 +4,29 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fc7c919-0244-4224-b25d-d992223c1680" name="Changes" comment="初始化项目">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima-leadnews-common/src/main/java/com/heima/common/swagger/Swagger2Configuration.java" afterDir="false" />
+    <list default="true" id="4fc7c919-0244-4224-b25d-d992223c1680" name="Changes" comment="feat:接口文档">
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-gateway/heima-leadnews-app-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-gateway/heima-leadnews-app-gateway/src/main/java/com/heima/app/gateway/AppGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-gateway/heima-leadnews-app-gateway/src/main/java/com/heima/app/gateway/filter/AuthorizedFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-gateway/heima-leadnews-app-gateway/src/main/java/com/heima/app/gateway/util/AppJwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-gateway/heima-leadnews-app-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-gateway/heima-leadnews-app-gateway/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima-leadnews-common/heima-leadnews-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-common/heima-leadnews-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima-leadnews-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima-leadnews-common/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-common/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima-leadnews-common/target/classes/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-common/target/classes/META-INF/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-user/src/main/java/com/heima/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-user/src/main/java/com/heima/user/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima-leadnews/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima-leadnews-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-gateway/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,6 +45,9 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2gYYkb3ODJGtIt0ROp8woCECV0X" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -58,6 +66,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AppGatewayApplication.executor": "Run",
     "Spring Boot.UserApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -75,6 +84,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.heima.app.gateway.util" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -82,7 +96,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.AppGatewayApplication">
+    <configuration name="AppGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="heima-leadnews-app-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.heima.app.gateway.AppGatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.heima.app.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="heima-leadnews-user" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.heima.user.UserApplication" />
@@ -98,6 +125,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.AppGatewayApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
       </list>
     </recent_temporary>
@@ -119,7 +147,7 @@
       <option name="presentableId" value="Default" />
       <updated>1691598538253</updated>
       <workItem from="1715876123845" duration="1731000" />
-      <workItem from="1715881567353" duration="820000" />
+      <workItem from="1715881567353" duration="4045000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <option name="closed" value="true" />
@@ -129,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715876253567</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat:接口文档">
+      <option name="closed" value="true" />
+      <created>1715882409069</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715882409069</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +173,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化项目" />
+    <MESSAGE value="feat:接口文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:接口文档" />
   </component>
 </project>
