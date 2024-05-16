@@ -16,6 +16,12 @@
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.heima</groupId>
+            <artifactId>heima-leadnews-utils</artifactId>
+        </dependency>
+    </dependencies>
 
 
 </project>
