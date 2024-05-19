@@ -48,19 +48,15 @@ public class AuthorizeFilter implements Ordered, GlobalFilter {
                 response.setStatusCode(HttpStatus.UNAUTHORIZED);
                 return response.setComplete();
             }
+            //获取用户信息
+            Object userId = claimsBody.get("id");
 
-            // 获取用户id
-            Object id = claimsBody.get("id");
-
-            // 放行之前,将解析的用户信息存储到header中
-
-            ServerHttpRequest serverHttpRequest = request.mutate().headers(header -> {
-                header.add("userId", id + "");
+            //存储header中
+            ServerHttpRequest serverHttpRequest = request.mutate().headers(httpHeaders -> {
+                httpHeaders.add("userId", userId + "");
             }).build();
-
-            // 重置请求
+            //重置请求
             exchange.mutate().request(serverHttpRequest);
-
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -68,7 +64,6 @@ public class AuthorizeFilter implements Ordered, GlobalFilter {
 
         //6.放行
         return chain.filter(exchange);
-
     }
 
     /**
