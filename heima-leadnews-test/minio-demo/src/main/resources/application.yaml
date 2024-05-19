@@ -1,0 +1,6 @@
+minio:
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket: leadnews
+  endpoint: http://172.16.53.100:9000
+  read-path: http://172.16.53.100:9000
