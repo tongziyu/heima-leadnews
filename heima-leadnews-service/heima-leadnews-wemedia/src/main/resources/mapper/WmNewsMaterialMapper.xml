@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.heima.wemedia.mapper.WmNewsMaterialMapper">
+    <!--批量插入关系-->
+    <insert id="saveRelations">
+        insert into
+            wm_news_material(material_id,news_id,type,ord)
+        values
+          <foreach collection="materialIds" index="ord" item="materialId" separator=",">
+            (#{materialId},#{newId},#{type},#{ord})
+          </foreach>
+
+
+    </insert>
+</mapper>

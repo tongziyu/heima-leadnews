@@ -1,6 +1,7 @@
 package com.heima.wemedia.controller.v1;
 
 import com.heima.model.common.dtos.ResponseResult;
+import com.heima.model.wemedia.dtos.WmNewsDto;
 import com.heima.model.wemedia.dtos.WmNewsPageReqDto;
 import com.heima.wemedia.service.WmNewsService;
 import lombok.extern.slf4j.Slf4j;
@@ -33,5 +34,17 @@ public class WmNewsController {
 
 
         return wmNewsService.findList(wmNewsPageReqDto);
+    }
+
+    /**
+     * 自媒体文章-发布,修改,保存草稿
+     * @param wmNewsDto
+     * @return
+     */
+    @PostMapping("/submit")
+    public ResponseResult publishNews(@RequestBody WmNewsDto wmNewsDto){
+
+
+        return wmNewsService.publishNews(wmNewsDto);
     }
 }
