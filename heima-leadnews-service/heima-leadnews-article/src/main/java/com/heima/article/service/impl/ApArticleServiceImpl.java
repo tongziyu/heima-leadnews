@@ -2,16 +2,25 @@ package com.heima.article.service.impl;
 
 
 import cn.hutool.core.util.StrUtil;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.heima.article.mapper.ApArticleConfigMapper;
+import com.heima.article.mapper.ApArticleContentMapper;
 import com.heima.article.mapper.ApArticleMapper;
 import com.heima.article.service.ApArticleService;
 import com.heima.common.constants.ArticleConstants;
+import com.heima.model.article.dtos.ArticleDto;
 import com.heima.model.article.dtos.ArticleHomeDto;
 import com.heima.model.article.pojos.ApArticle;
+import com.heima.model.article.pojos.ApArticleConfig;
+import com.heima.model.article.pojos.ApArticleContent;
 import com.heima.model.common.dtos.ResponseResult;
+import com.heima.model.common.enums.AppHttpCodeEnum;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
@@ -23,6 +32,7 @@ import java.util.List;
  */
 @Slf4j
 @Service
+@Transactional
 public class ApArticleServiceImpl
     extends ServiceImpl<ApArticleMapper, ApArticle>
     implements ApArticleService {
@@ -31,6 +41,11 @@ public class ApArticleServiceImpl
     private ApArticleMapper apArticleMapper;
 
     private static final Integer MAX_PAGE_SIZE = 50;
+    @Autowired
+    private ApArticleConfigMapper apArticleConfigMapper;
+
+    @Autowired
+    private ApArticleContentMapper apArticleContentMapper;
 
 
     /**
@@ -83,5 +98,64 @@ public class ApArticleServiceImpl
         List<ApArticle> apArticles = apArticleMapper.loadArticleList(type, articleHomeDto);
 
         return ResponseResult.okResult(apArticles);
+    }
+
+    /**
+     * 保存文章
+     *
+     * @param articleDto
+     * @return
+     */
+    @Override
+    public ResponseResult saveArticle(ArticleDto articleDto) {
+
+        // 1. 参数校验
+        if (articleDto == null){
+            return ResponseResult.errorResult(AppHttpCodeEnum.PARAM_INVALID);
+        }
+
+        ApArticle apArticle = new ApArticle();
+
+        BeanUtils.copyProperties(articleDto, apArticle);
+        // 保存或者修改文章
+        if (articleDto.getId() == null){
+            // 保存article
+            save(apArticle);
+            log.info("保存的article信息:{}",apArticle);
+
+            // 保存article Config
+            ApArticleConfig apArticleConfig = new ApArticleConfig();
+            apArticleConfig.setArticleId(apArticle.getId());
+            apArticleConfig.setIsDown(false);
+            apArticleConfig.setIsDelete(false);
+            apArticleConfig.setIsComment(true);
+            apArticleConfig.setIsForward(true);
+            apArticleConfigMapper.insert(apArticleConfig);
+            log.info("保存的articleConfig信息:{}",apArticleConfig);
+
+            // 保存article Content
+            ApArticleContent apArticleContent = new ApArticleContent();
+
+            apArticleContent.setArticleId(apArticle.getId());
+            apArticleContent.setContent(articleDto.getContent());
+            apArticleContentMapper.insert(apArticleContent);
+            log.info("保存的文章内容:{}",apArticleContent );
+
+        }else{
+            // 修改文章
+            updateById(apArticle);
+
+            // 修改内容
+            ApArticleContent apArticleContent = apArticleContentMapper.selectOne(Wrappers.<ApArticleContent>lambdaQuery()
+                    .eq(ApArticleContent::getArticleId, apArticle.getId()));
+
+            apArticleContent.setContent(articleDto.getContent());
+
+            apArticleContentMapper.updateById(apArticleContent);
+
+        }
+
+
+        return ResponseResult.okResult(apArticle.getId());
     }
 }

@@ -18219,3 +18219,6 @@ Unconditional classes:
 2024-05-22 20:12:37.341 [http-nio-51803-exec-7] INFO  c.h.w.interceptor.WmTokenInterceptor - 用户id 1102
 2024-05-22 20:12:39.963 [http-nio-51803-exec-9] INFO  c.h.w.interceptor.WmTokenInterceptor - 用户id 1102
 2024-05-22 20:12:39.963 [http-nio-51803-exec-8] INFO  c.h.w.interceptor.WmTokenInterceptor - 用户id 1102
+2024-05-22 20:18:04.409 [http-nio-51803-exec-3] INFO  c.h.w.interceptor.WmTokenInterceptor - 用户id 1102
+2024-05-22 20:18:06.153 [http-nio-51803-exec-2] INFO  c.h.w.interceptor.WmTokenInterceptor - 用户id 1102
+2024-05-22 20:28:31.516 [com.alibaba.nacos.naming.beat.sender] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@leadnews-wemedia with instance: Instance{instanceId='null', ip='192.168.1.25', port=51803, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@leadnews-wemedia', metadata={preserved.register.source=SPRING_CLOUD}}

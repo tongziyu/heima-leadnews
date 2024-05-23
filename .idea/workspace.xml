@@ -4,23 +4,31 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fc7c919-0244-4224-b25d-d992223c1680" name="Changes" comment="feat: 部分查询功能">
-      <change afterPath="$PROJECT_DIR$/heima-leadnews-common/src/main/java/com/heima/common/constants/WemediaConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima-leadnews-model/src/main/java/com/heima/model/wemedia/dtos/WmNewsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/java/com/heima/wemedia/mapper/WmNewsMaterialMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/resources/mapper/WmNewsMaterialMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/test/java/com/heima/wemedia/mapper/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/test/java/com/heima/wemedia/mapper/WmNewsMaterialMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/leadnews.2024-05-22.log" afterDir="false" />
+    <list default="true" id="4fc7c919-0244-4224-b25d-d992223c1680" name="Changes" comment="feat: 新增修改文章">
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-feign-api/src/main/java/com/heima/apis/article/IArticleClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-feign-api/src/main/java/com/heima/apis/article/fallback/IArticleClientFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-model/src/main/java/com/heima/model/article/dtos/ArticleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/src/main/java/com/heima/article/feign/ArticleClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/src/main/java/com/heima/article/mapper/ApArticleConfigMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/src/main/java/com/heima/article/service/ApArticleConfigService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/src/main/java/com/heima/article/service/impl/ApArticleConfigServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/java/com/heima/wemedia/config/InitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/java/com/heima/wemedia/service/WmNewsAutoScanService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/java/com/heima/wemedia/service/impl/WmNewsAutoScanServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/test/java/com/heima/wemedia/service/WmNewsAutoScanServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/leadnews.2024-05-23.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima-leadnews-model/src/main/java/com/heima/model/common/enums/AppHttpCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-model/src/main/java/com/heima/model/common/enums/AppHttpCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima-leadnews-model/target/classes/com/heima/model/common/enums/AppHttpCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-model/target/classes/com/heima/model/common/enums/AppHttpCodeEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/java/com/heima/wemedia/controller/v1/WmNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/java/com/heima/wemedia/controller/v1/WmNewsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/java/com/heima/wemedia/mapper/WmMaterialMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/java/com/heima/wemedia/mapper/WmMaterialMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/java/com/heima/wemedia/mapper/WmUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/java/com/heima/wemedia/mapper/WmUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/java/com/heima/wemedia/service/WmNewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/java/com/heima/wemedia/service/WmNewsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima-leadnews-feign-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-feign-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/src/main/java/com/heima/article/controller/v1/ArticleHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/src/main/java/com/heima/article/controller/v1/ArticleHomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/src/main/java/com/heima/article/service/ApArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/src/main/java/com/heima/article/service/ApArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/src/main/java/com/heima/article/service/impl/ApArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/src/main/java/com/heima/article/service/impl/ApArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/target/classes/com/heima/article/controller/v1/ArticleHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/target/classes/com/heima/article/controller/v1/ArticleHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/target/classes/com/heima/article/service/ApArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/target/classes/com/heima/article/service/ApArticleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/target/classes/com/heima/article/service/impl/ApArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/target/classes/com/heima/article/service/impl/ApArticleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-article/target/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/java/com/heima/wemedia/WemediaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/java/com/heima/wemedia/WemediaApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/java/com/heima/wemedia/service/impl/WmNewsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/main/java/com/heima/wemedia/service/impl/WmNewsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/leadnews.2024-05-20.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/leadnews.2024-05-20.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/leadnews.2024-05-22.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/leadnews.2024-05-22.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="sqlMapper" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -68,6 +76,7 @@
     "Application.MinIOTest.executor": "Run",
     "JUnit.ArticleFreemarkerTest.createStaticUrlTest.executor": "Run",
     "JUnit.MinioStarterTest.test1.executor": "Run",
+    "JUnit.WmNewsAutoScanServiceTest.autoScanWmNews.executor": "Debug",
     "JUnit.WmNewsMaterialMapperTest.test.executor": "Run",
     "Maven.heima-leadnews [clean].executor": "Run",
     "Maven.heima-leadnews [install].executor": "Run",
@@ -136,18 +145,18 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.WemediaGatewayAplication">
-    <configuration name="WmNewsMaterialMapperTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.AppGatewayApplication">
+    <configuration name="WmNewsAutoScanServiceTest.autoScanWmNews" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="heima-leadnews-wemedia" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.heima.wemedia.mapper.*" />
+          <option name="PATTERN" value="com.heima.wemedia.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.heima.wemedia.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.heima.wemedia.mapper.WmNewsMaterialMapperTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="com.heima.wemedia.service" />
+      <option name="MAIN_CLASS_NAME" value="com.heima.wemedia.service.WmNewsAutoScanServiceTest" />
+      <option name="METHOD_NAME" value="autoScanWmNews" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -207,11 +216,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.AppGatewayApplication" />
         <item itemvalue="Spring Boot.WemediaGatewayAplication" />
         <item itemvalue="Spring Boot.WemediaApplication" />
-        <item itemvalue="JUnit.WmNewsMaterialMapperTest.test" />
-        <item itemvalue="Spring Boot.AppGatewayApplication" />
         <item itemvalue="Spring Boot.ArticleApplication" />
+        <item itemvalue="JUnit.WmNewsAutoScanServiceTest.autoScanWmNews" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +263,7 @@
       <workItem from="1716303953474" duration="363000" />
       <workItem from="1716309855586" duration="1358000" />
       <workItem from="1716314225783" duration="813000" />
-      <workItem from="1716348360904" duration="16122000" />
+      <workItem from="1716348360904" duration="30662000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <option name="closed" value="true" />
@@ -320,7 +329,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716143570154</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: 新增修改文章">
+      <option name="closed" value="true" />
+      <created>1716380114547</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716380114547</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,6 +364,18 @@
     <MESSAGE value="feat: 图片上传" />
     <MESSAGE value="feat: 素材列表分页查询" />
     <MESSAGE value="feat: 部分查询功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 部分查询功能" />
+    <MESSAGE value="feat: 新增修改文章" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增修改文章" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/src/test/java/com/heima/wemedia/service/WmNewsAutoScanServiceTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -21,6 +21,7 @@ import com.heima.utils.thread.WmThreadLocalUtil;
 import com.heima.wemedia.mapper.WmMaterialMapper;
 import com.heima.wemedia.mapper.WmNewsMapper;
 import com.heima.wemedia.mapper.WmNewsMaterialMapper;
+import com.heima.wemedia.service.WmNewsAutoScanService;
 import com.heima.wemedia.service.WmNewsService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -50,6 +51,9 @@ public class WmNewsServiceImpl extends ServiceImpl<WmNewsMapper, WmNews>
 
     @Autowired
     private WmMaterialMapper wmMaterialMapper;
+
+    @Autowired
+    private WmNewsAutoScanService wmNewsAutoScanService;
 
 
     /**
@@ -164,19 +168,9 @@ public class WmNewsServiceImpl extends ServiceImpl<WmNewsMapper, WmNews>
         // 不是草稿,保存文章封面和图片与素材的关系
         saveRelativeInfoForConvert(wmNewsDto,wmNews,materials);
 
-        // 关联封面中的图片与素材的关系
-        // 文章封面类型  0 无图 1 单图 3 多图 -1 自动
-        if (wmNews.getType() == 0){
+        // 审核文章
+        wmNewsAutoScanService.autoScanWmNews(wmNews.getId());
 
-        }else if(wmNews.getType() == 1) {
-
-        }
-        else if(wmNews.getType() == 3) {
-
-        }
-        else if(wmNews.getType() == -1) {
-            // 如果是自动,则按照匹配规则匹配封面图片
-        }
         return ResponseResult.okResult(AppHttpCodeEnum.SUCCESS);
     }
 
