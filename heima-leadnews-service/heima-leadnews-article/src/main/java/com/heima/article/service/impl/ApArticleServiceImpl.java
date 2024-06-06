@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.heima.article.mapper.ApArticleConfigMapper;
 import com.heima.article.mapper.ApArticleContentMapper;
 import com.heima.article.mapper.ApArticleMapper;
+import com.heima.article.service.ApArticleFreemarkerService;
 import com.heima.article.service.ApArticleService;
 import com.heima.common.constants.ArticleConstants;
 import com.heima.model.article.dtos.ArticleDto;
@@ -46,6 +47,9 @@ public class ApArticleServiceImpl
 
     @Autowired
     private ApArticleContentMapper apArticleContentMapper;
+
+    @Autowired
+    private ApArticleFreemarkerService apArticleFreemarkerService;
 
 
     /**
@@ -155,7 +159,9 @@ public class ApArticleServiceImpl
 
         }
 
+        // 生成静态文件,并保存到minio中
 
+        apArticleFreemarkerService.buildArticleToHtml(apArticle,articleDto.getContent());
         return ResponseResult.okResult(apArticle.getId());
     }
 }
