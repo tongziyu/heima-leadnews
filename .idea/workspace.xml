@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fc7c919-0244-4224-b25d-d992223c1680" name="Changes" comment="feat: 文章审核">
+    <list default="true" id="4fc7c919-0244-4224-b25d-d992223c1680" name="Changes" comment="feat: ...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,18 +29,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "tongziyu"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tongziyu&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/tongziyu/heima-leadnews.git",
-    "accountId": "0d831d00-b054-4384-afcd-3d95c03e4302"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/tongziyu/heima-leadnews.git&quot;,
+    &quot;accountId&quot;: &quot;0d831d00-b054-4384-afcd-3d95c03e4302&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -64,56 +63,56 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MinIOTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArticleFreemarkerTest.createStaticUrlTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MinioStarterTest.test1.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.WmNewsAutoScanServiceTest.autoScanWmNews.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.WmNewsMaterialMapperTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.heima-leadnews [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.heima-leadnews [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.heima-leadnews-common [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.heima-leadnews-gateway [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.test4j-demo [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AppGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ArticleApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.UserApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.WemediaApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.WemediaGatewayAplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/tongziyu/JavaCode/workspace/heima-leadnews/heima-leadnews-service&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.59554976&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;service.view.auto.scroll.to.source&quot;: &quot;true&quot;,
-    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;database.query.execution&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Application.executor": "Run",
+    "Application.MinIOTest.executor": "Run",
+    "JUnit.ArticleFreemarkerTest.createStaticUrlTest.executor": "Run",
+    "JUnit.MinioStarterTest.test1.executor": "Run",
+    "JUnit.WmNewsAutoScanServiceTest.autoScanWmNews.executor": "Debug",
+    "JUnit.WmNewsMaterialMapperTest.test.executor": "Run",
+    "Maven.heima-leadnews [clean].executor": "Run",
+    "Maven.heima-leadnews [install].executor": "Run",
+    "Maven.heima-leadnews-common [clean].executor": "Run",
+    "Maven.heima-leadnews-gateway [clean].executor": "Run",
+    "Maven.test4j-demo [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AppGatewayApplication.executor": "Run",
+    "Spring Boot.ArticleApplication.executor": "Run",
+    "Spring Boot.UserApplication.executor": "Run",
+    "Spring Boot.WemediaApplication.executor": "Run",
+    "Spring Boot.WemediaGatewayAplication.executor": "Run",
+    "git-widget-placeholder": "dev",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/tongziyu/JavaCode/workspace/heima-leadnews/heima-leadnews-service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.59554976",
+    "run.configurations.included.in.services": "true",
+    "service.view.auto.scroll.to.source": "true",
+    "settings.build.tools.auto.reload": "ALL",
+    "settings.editor.selected.configurable": "database.query.execution",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -210,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AppGatewayApplication" />
-        <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.WemediaGatewayAplication" />
         <item itemvalue="Spring Boot.WemediaApplication" />
+        <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.ArticleApplication" />
+        <item itemvalue="Spring Boot.AppGatewayApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +262,8 @@
       <workItem from="1717081123099" duration="377000" />
       <workItem from="1717425956015" duration="36000" />
       <workItem from="1717557948650" duration="4000" />
-      <workItem from="1717688001647" duration="800000" />
+      <workItem from="1717688001647" duration="1414000" />
+      <workItem from="1718462044794" duration="519000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <option name="closed" value="true" />
@@ -369,7 +369,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717688301860</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: ...">
+      <option name="closed" value="true" />
+      <created>1717688827845</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717688827845</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +388,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -398,7 +418,8 @@
     <MESSAGE value="feat: 部分查询功能" />
     <MESSAGE value="feat: 新增修改文章" />
     <MESSAGE value="feat: 文章审核" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 文章审核" />
+    <MESSAGE value="feat: ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: ..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
